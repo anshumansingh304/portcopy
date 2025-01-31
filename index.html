@@ -1,706 +1,1191 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anshuman- Personal Portfolio</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jamir</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--
+    - favicon
+  -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<link rel="stylesheet" href="style.css">
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
- 
-</head>
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-<body>
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- Background Video & Header -->
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-    <div class="banner">
-        <video src="videoplayback.mp4" type="video/mp4" autoplay muted loop></video>
+  <body>
+    <!--
+    - #MAIN
+  -->
 
-        <!-- Header -->
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="dp2.png" alt="Anshuman" width="80" />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Richard hanrick">Anshuman Y.</h1>
+
+            <p class="title">Product manager</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:anshumany28@gmail.com" class="contact-link"
+                  >anshumany28@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+
+                <a href="tel:+917905014657" class="contact-link"
+                  >+917905014657</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1998-11-06">NOV 06, 1998</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Lucknow, UP, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm a Technical Product Manager with extensive experience in
+              operations, software development, and product management. I have a
+              proven track record of successfully launching and optimizing
+              digital products, improving user experiences, and increasing
+              customer retention. My expertise spans user research, data-driven
+              decision-making, and cross-functional team collaboration.
+            </p>
+
+            <p>
+              My goal is to build products that not only meet business
+              objectives but also provide seamless and intuitive experiences for
+              users. I have led high-impact projects in fintech, edtech, and
+              ride-hailing services, driving measurable business growth and
+              innovation.
+            </p>
+          </section>
+
+          <!--
+          - service
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="image.png
+                "
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Product management</h4>
+
+                  <p class="service-item-text">
+                    As a Product Manager, I plan, execute, monitor, and take
+                    calculated risks. I collaborate with cross-functional teams
+                    and stakeholders, prioritize tasks effectively, and drive
+                    the product lifecycle from inception to closur
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="pngwing.com (24).png"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Ideation & Conceptualization
+                  </h4>
+
+                  <p class="service-item-text">
+                    Brainstorming innovative solutions, mapping user journeys,
+                    creating wireframes, and developing early prototypes to
+                    visualize the product concept
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="pngwing.com (25).png"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Developer</h4>
+
+                  <p class="service-item-text">
+                    I am a MERN stack developer with expertise in building
+                    user-centric applications and fluency in both SQL and NoSQL
+                    databases
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="pngwing.com (26).png"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Iterative problem solver
+                  </h4>
+
+                  <p class="service-item-text">
+                    An iterative problem solver leveraging Agile, Scrum, and
+                    sprint methodologies to drive continuous improvement and
+                    efficient product development.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
         
 
-        <div class="content" id="home">
-          <nav class="navbar bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Tour <span style="color: red;">Travel</span></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            
-          </li>
-          <li><a class="dropdown-item" href="#">About us</a></li>
-              <li><a class="dropdown-item" href="#">Contact us</a></li>
-              <li><a class="dropdown-item" href="#">Vlogs</a></li>
-              <li><a class="dropdown-item" href="#">Destinations</a></li>
-              <li><a class="dropdown-item" href="#">Packages</a></li>
-             
-           
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Daniel lewis"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Daniel lewis
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-2.png"
+                      alt="Jessica miller"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Jessica miller
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-3.png"
+                      alt="Emily evans"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Emily evans
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-4.png"
+                      alt="Henry william"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
+
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Henry william
+                  </h4>
+
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were
+                      very pleased with the work done. She has a lot of
+                      experience and is very concerned about the needs of
+                      client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing elit, seds do et eiusmod tempor
+                      incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+                </div>
+              </li>
             </ul>
-          </li>
-        </ul>
-       
-      </div>
-    </div>
-  </div>
-</nav>
-              
+          </section>
 
-            <div class="title">
-                <h1>Travel with <span style="color: red;">Jamir</span></h1>
-                <p>See the World for Less! Explore Amazing Destinations with Our Budget-Friendly Packages.  </p>
+          <!--
+          - testimonials modal
+        -->
+          -->
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-                <a href="./booking.html" class="button">
-                    <span class="material-symbols-outlined">
-                        how_to_reg
-                    </span>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+                <time datetime="2021-06-14">14 June, 2021</time>
+
+                <div data-modal-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were
+                    very pleased with the work done. She has a lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum
+                    dolor sit amet, ullamcous cididt consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels
+                    dolore magnarels alia.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!--
+          - clients
+        -->
+
+          <section class="clients">
+            <h3 class="h3 clients-title">Projects</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="2aeb8f9a1e68837d6b940b7261978bda.png"
+                    alt="client logo"
+                  />
                 </a>
-            </div>
-        </div>
-    </div>
+              </li>
 
-    <!-- Services -->
+              <li class="clients-item">
+                <a href="#">
+                  <img src="shiksha.webp" alt="client logo" />
+                </a>
+              </li>
 
-    <section class="container">
-        <div class="text">
-            <h2>We have the best services available for you!</h2>
-        </div>
-        <div class="rowitems">
+              <li class="clients-item">
+                <a href="#">
+                  <img src="pngwing.com (29).png" alt="client logo" />
+                </a>
+              </li>
 
-            <div class="container-box">
-                <div class="container-image">
-                    <img src="./assets/files/1a.jpg" alt="Flight Services">
-                </div>
-                <h4>Flight Services</h4>
-                <p>Arrival and Departure</p>
-            </div>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="templateImages1656060260447_cropped.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <div class="container-box">
-                <div class="container-image">
-                    <img src="./assets/files/2a.jpg" alt="Food Services">
-                </div>
-                <h4>Food Services</h4>
-                <p>Catering</p>
-            </div>
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="MyGate_new_logo_1-01-1-768x263.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
 
-            <div class="container-box">
-                <div class="container-image">
-                    <img src="./assets/files/3a.jpg" alt="Travel Services">
-                </div>
-                <h4>Travel Services</h4>
-                <p>Pick-up/drop</p>
-            </div>
+              <li class="clients-item">
+                <a href="#">
+                  <img src="unacademy-seeklogo.png" alt="client logo" />
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-            <div class="container-box">
-                <div class="container-image">
-                    <img src="./assets/files/4a.jpg" alt="Hotel Services">
-                </div>
-                <h4>Hotel Services</h4>
-                <p>Check-in/out</p>
-            </div>
-        </div>
-    </section>
+        <!--
+        - #RESUME
+      -->
 
-    <!-- Packages -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-    <section class="package" id="package">
-        <div class="package-title">
-            <h2>Packages</h2>
-        </div>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <div class="package-content">
-            <div class="text-block">
-                <h3>Best Selling Destinations</h3>
-            </div>
-
-            <a href="./package.html#2700">
-                <div class="box">
-                    <div class="image">
-                        <img src="./assets/files/p1.jpg" alt="">
-                        <h3>Starting at Rs.2,700 </h3>
-                    </div>
-                </div>
-            </a>
-
-            <a href="./package.html#4999">
-                <div class="box">
-                    <div class="image">
-                        <img src="./assets/files/p2.jpg" alt="">
-                        <h3>Starting at Rs.4,999</h3>
-                    </div>
-                </div>
-            </a>
-
-            <a href="./package.html#9999">
-                <div class="box">
-                    <div class="image">
-                        <img src="./assets/files/p3.jpg" alt="">
-                        <h3>Starting at Rs.9,999</h3>
-                    </div>
-                </div>
-            </a>
-
-            <a href="./package.html#30000">
-                <div class="box">
-                    <div class="image">
-                        <img src="./assets/files/p4.jpg" alt="">
-                        <h3>Starting at Rs.30,000</h3>
-                    </div>
-                </div>
-            </a>
-
-            <a href="./package.html#37700">
-                <div class="box">
-                    <div class="image">
-                        <img src="./assets/files/pac1.jpeg" alt="">
-                        <h3>Starting at Rs.37,700/-</h3>
-                    </div>
-                </div>
-            </a>
-
-            <a href="./package.html#47500">
-                <div class="box">
-                    <div class="image">
-                        <img src="./assets/files/pac1.jpg" alt="">
-                        <h3>Starting at Rs.47,500/-</h3>
-                    </div>
-                </div>
-            </a>
-
-            <a href="./package.html#58500">
-                <div class="box">
-                    <div class="image">
-                        <img src="./assets/files/pac3.jpg" alt="">
-                        <h3>Starting at Rs.58,500/-</h3>
-                    </div>
-                </div>
-            </a>
-
-            <a href="./package.html#59500">
-                <div class="box">
-                    <div class="image">
-                        <img src="./assets/files/pac7.jpg" alt="">
-                        <h3>Starting at Rs.59,500/-</h3>
-                    </div>
-                </div>
-            </a>
-            <a href="./package.html#59500">
-                <div class="box">
-                    <div class="image">
-                        <img src="./assets/files/l3.jpg" alt="">
-                        <h3>Starting at Rs.65,500/-</h3>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-    </section>
-
-    <section>
-        <br><br>
-        <div class="pack4-content">
-            <div style="text-align:center">
-                <button type="button" class="btn btn-primary"><a href="./booking.html"><JavaBlink>Book Now</JavaBlink></a></button>
-            </div>
-        </div><br><br>
-    </section>
-
-    <section class="package2" id="package">
-        <div class="pack5-content">
-
-            <div class="text-block">
-                <h3>Bestsellers at EPIC Discounts</h3>
-                <p>Grab our top-selling packages at unbelievable prices. Get 50% OFF on top sightseeing's , Free E-Visa
-                    & more!!</p>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/files/pack5.1.jpg" alt="">
-                    <h3>Egypt</h3>
-                </div>
-            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Product manager <span>Onlinedekho</span>
+                </h4>
 
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/files/pack5.2.jpg" alt="">
-                    <h3>Vietnam</h3>
-                </div>
-            </div>
+                <span>2024 — Present</span>
 
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/files/pac2.3.jpg" alt="">
-                    <h3>Karala</h3>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/files/pac2.4.webp" alt="">
-                    <h3>Bali</h3>
-                </div>
-            </div>
-        </div>
-    </section><br><br>
-
-    <section class="package2" id="package">
-
-        <div class="package2-content">
-            <div class="text-block">
-                <h3>Jackpot Deals on Top Selling Packages</h3>
-                <p>Save extra with our exclusive deals!</p>
-            </div>
-
-            <a href="./assets/package.html#6000">
-                <div class="box">
-                    <div class="image">
-                        <img src="./assets/files/pac2.1.jpg" alt="">
-                        <h3> Thailand </h3>
-                    </div>
-                </div>
-            </a>
-
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/files/pack2.2.jpg" alt="">
-                    <h3>Goa</h3>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/files/pac2.3.jpg" alt="">
-                    <h3>Karala</h3>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image">
-                    <img src="./assets/files/pac2.4.webp" alt="">
-                    <h3>Bali</h3>
-                </div>
-            </div>
-
-            <a href="./package.html#6000">
-                <div class="box">
-                    <div class="image">
-                        <img src="./assets/files/pac2.5.jpg" alt="">
-                        <h3>Kashmir</h3>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <!-- Explore Button -->
-
-        <div style="text-align:center">
-            <button type="button" class="btn btn-primary"> <a href="package.html">Explore More</a></button>
-        </div>
-    </section><br><hr><br>
-
-    <!-- Locations -->
-
-    <section class="locations" id="locations">
-        <div class="package-title">
-            <h2>Locations</h2>
-        </div>
-
-        <div class="location-content">
-            <a href="./locations.html">
-                <div class="col-content">
-                    <img src="./assets/files/l1.jpg" alt="">
-                    <h5>India</h5>
-                    <p>Kashmir</p>
-                </div>
-            </a>
-
-            <a href="./locations.html#istanbul">
-                <div class="col-content">
-                    <img src="./assets/files/l2.jpg" alt="">
-                    <h5>Turkey</h5>
-                    <p>Istanbul</p>
-                </div>
-            </a>
-
-            <a href="./locations.html#paris">
-                <div class="col-content">
-                    <img src="./assets/files/l3.jpg" alt="">
-                    <h5>France</h5>
-                    <p>Paris</p>
-                </div>
-            </a>
-
-            <a href="./locations.html#bali">
-                <div class="col-content">
-                    <img src="./assets/files/l4.jpg" alt="">
-                    <h5>Indonesia</h5>
-                    <p>Bali</p>
-                </div>
-            </a>
-
-            <a href="./locations.html#dubai">
-                <div class="col-content">
-                    <img src="./assets/files/l5.jpg" alt="">
-                    <h5>United Arab Emirates</h5>
-                    <p>Dubai</p>
-                </div>
-            </a>
-
-            <a href="./locations.html#geneva">
-                <div class="col-content">
-                    <img src="./assets/files/l6.jpg" alt="">
-                    <h5>Switzerland</h5>
-                    <p>Geneva</p>
-                </div>
-            </a>
-
-            <a href="./locations.html#port-blair">
-                <div class="col-content">
-                    <img src="./assets/files/l7.jpg" alt="">
-                    <h5>Andaman & Nicobar</h5>
-                    <p>Port Blair</p>
-                </div>
-            </a>
-        </div>
-    </section><br><hr>
-
-    <!-- FAQ;s -->
-
-    <section><br>
-        <div class="destination-title">
-            <h2>Best Destinations to Visit in India</h2>
-        </div>
-        <div class="container1">
-            <style>
-                .destination-title {
-                    text-align: center;
-                }
-
-                .container1 {
-                    display: grid;
-                    position: relative;
-                    grid-template-columns: auto auto auto;
-                    background: color #f6f1f1;
-                    padding: 48px;
-                    font-size: 12px;
-                    gap: 10px;
-                    margin-top: 5px;
-                    margin-left: 100px;
-                    margin-right: 100px;
-                    margin-bottom: 1px;
-
-                    .loc-detail li {
-                        font-size: 10px;
-                        color: black;
-                        margin-left: 15px;
-                        margin-bottom: 2px;
-                        list-style-type: circle;
-                    }
-
-                    .box {
-                        background: inherit;
-                        color: black;
-                        box-shadow: 5px 5px 10px #3b3737;
-                        padding: 5px;
-                        border-radius: 15px;
-                    }
-                }
-            </style>
-
-            <div class="box">
-                <h1>Goa</h1>
-                <p>The unofficial party place of India, Goa is more than that. It has a great legacy, history and
-                    culture that are yet to be explored. But if beaches are what you are looking for, then the state
-                    has that too. And that's why, India tours to Goa are a great option to explore the place,
-                    according to your interests. Goa holiday packages are also popular because Goa is one of the top
-                    places in the world when it comes to nightlife. Find several exciting tour packages and other
-                    India holiday packages that let you try Goa's melange of watersports and other fun activities.
-                    <br>
-                    <br><b>Best time to visit :</b> November to February <br>
-
-                    <br> <b>Best places to visit:</b>
-                <ul class="loc-detail">
-                    <li>Calangute</li>
-                    <li>Baga</li>
-                    <li>Anjuna</li>
-                    <li> Miramar</li>
-                    <li> Palolem</li>
-                    <li> Panjim</li>
-                </ul>
-
-                <br> You can also include the offbeat Patnem Beach in your holiday tour packages, since it was
-                listed amongst one of Asia's top 20 beaches.
+                <p class="timeline-text">
+                  1: Conducted market and competitor research, driving a 20%
+                  improvement in product features and identifying growth
+                  opportunities. <br />2: Created product roadmaps, improving
+                  delivery efficiency by 15% through clear priorities and
+                  timelines. <br />
+                  3: Implemented regular feedback collection, leveraging NPS and
+                  sentiment analysis to boost customer retention by 40% <br />
+                  4: Developed a user-friendly admin panel with key segments,
+                  enabling admins to sort user data and boosting team
+                  productivity by 60%. <br />
+                  5: Guided vendors on proper food packaging to prevent spillage
+                  and trained delivery executives on food handling, reducing
+                  returns by 45%.
                 </p>
-            </div>
+              </li>
 
-            <div class="box">
-                <h1>
-                    Kerala
-                </h1>
-                <p>God's own country, Kerala has been a popular tourist destination in India. You can explore it all
-                    with India tours to this marvellous destination. With suitable tour packages, you can discover
-                    scenic seaside destinations and hill stations in Kerala. <br>
-                    <br> <b>Best time to visit:</b> September to March <br>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  software engineer <span>Krypson Infomatics</span>
+                </h4>
 
-                    <br> <b>Best places to visit:</b>
-                <ul class="loc-detail">
-                    <li>Sree Padmanabhaswamy Temple</li>
-                    <li> Francis CSI Church</li>
-                    <li> Paradesi Synagogue</li>
-                    <li> Eravikulam National Park
-                        Varkala Beach</li>
-                    <li>Athirappilly Waterfalls</li>
-                </ul>
-                <br>
+                <span>2023 — 2024</span>
 
-                <br>
-                If you are planning India holiday packages in the state, then you must not miss out on its
-                lip-smacking cuisine as well. Check your holiday tour packages and book accordingly.</p>
-
-            </div>
-
-            <div class="box">
-                <h1>Kashmir</h1>
-                <p>
-                    For decades, the Kashmir valley has attracted tourists from all over the world. If you can't
-                    plan a vacation on your own, you should check out India tours for Kashmir to help you with an
-                    unforgettable holiday. With the right all India tour packages, you can discover lush green
-                    valleys, snow-covered peaks and gorgeous wildlife. Your trip packages must include the Chenab,
-                    Sindh and Lidder valleys. Don't forget to buy a world-famous Kashmiri shawl and one-of-a-kind
-                    handicrafts for your loved ones. <br>
-                    <br> <b> Best Time to Visit:</b> March to August <br>
-
-                    <br> Best Places to Visit: <br>
-                <ul class="loc-detail">
-                    <li>Gulmarg</li>
-                    <li> Srinagar</li>
-                    <li> Dal Lake</li>
-                    <li> Sonamarg</li>
-                    <li> Indira Gandhi Tulip Garden</li>
-                </ul>
-                <br>
-                <br> These places should be included in the best tour packages for Kashmir. Find travel packages to
-                suit all needs and you can also find exquisite honeymoon packages, since Kashmir is an ethereal
-                destination for a picture-perfect Indian honeymoon.</p>
-            </div>
-
-            <div class="box">
-                <h1>Sikkim</h1>
-                <p>If you are looking for an Indian destination that is fit for a world tour package, then look no
-                    further than Sikkim. You can plan amazing India tours to this mountain marvel, which is home to
-                    the country's highest peak, Kanchenjunga. It is certainly a great destination for quality
-                    international tour packages. Check out Sikkim tour packages for a trip to this charming Indian
-                    state. <br>
-                    <br> <b>Best Time to Visit:</b> March to May <br>
-
-                    <br> Best Places to Visit:
-                <ul class="loc-detail">
-                    <li> Gangtok</li>
-                    <li> Nathu La Pass</li>
-                    <li> Tsomgo Lake</li>
-                    <li> Rumtek Monastery</li>
-                </ul>
+                <p class="timeline-text">
+                  1: Optimized product page performance, reducing load times by
+                  50% on average, leading to a smoother user experience.
+                  <br />2: Achieved a 20% decrease in bounce rates, indicating
+                  higher user engagement and improved site retention. <br />
+                  3: Boosted sales by 10% through enhanced user experience and
+                  faster loading times. <br />
+                  4:Addressed critical production issues using reverse
+                  engineering, debugging, and enhanced unit test coverage,
+                  minimizing backend downtime and ensuring system reliability.
                 </p>
-            </div>
+              </li>
 
-            <div class="box">
-                <h1>Shimla</h1>
-                <p> Shimla, the Queen of the Hills, is the stuff that dreamy India tours are made of! Shimla is a
-                    great
-                    destination for international honeymoon packages, with its pristine landscape, mountains,
-                    greenery
-                    and romantic weather. A Shimla tour also means checking out the delightful cafes and eateries
-                    here. <br>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Operations & Project management
+                  <span>Awign ent. pvt. ltd.</span>
+                </h4>
 
-                    <br> <b>Best Time to Visit:</b> May to June/December to January <br>
+                <span>2020 — 2023</span>
 
-                    <br> Best Places to Visit:
-                <ul class="loc-detail">
-                    <li>The Ridge</li>
-                    <li> Green Valley</li>
-                    <li> Mall Road</li>
-                    <li> Jakhoo Hill</li>
-                </ul>
+                <p class="timeline-text">
+                  1: Led competitive benchmarking for Swiggy using surveys,
+                  audits, vendor checks, rider audits, and menu inspections,
+                  improving customer experience by 20%, retention by 15%, and
+                  traffic by 25%. <br />2: Managed calling projects and client
+                  relationships with Udaan, Swiggy, Zomato, and Unacademy,
+                  increasing project outcomes by 25% <br />3: Conducted property
+                  audits for OYO, adhering to SOPs and improving service quality
+                  by 20% across audited properties. <br />4: Streamlined
+                  packaging charges for Swiggy, onboarding vendors to a new
+                  slab, boosting efficiency, retention, and satisfaction by 35%.
+                  <br />
+                  5:Assisted MyGate in launching in Lucknow and onboarded 25
+                  gated societies within the first month
                 </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
             </div>
 
-            <div class="box">
-                <h1> Uttarakhand</h1>
-                <p> There are many India tours which keep Uttarakhand at the forefront and why not? The state is
-                    blessed with unmatched natural beauty. Find Uttarakhand tour packages covering several popular
-                    destinations. The state offers the right mix of spirituality, trekking, adventure, beautiful
-                    mountain landscapes and welcoming locals. <br>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bachelor of Technology (B.Tech)
+                  <span>Dr. APJ. Abdul kalam technical university</span>
+                </h4>
 
-                    <br> <b> Best time to visit:</b> March to April/September to October <br>
+                <span>2017 — 2021</span>
+              </li>
+            </ol>
+          </section>
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
 
-                    <br> Best places to visit:
-                <ul class="loc-detail">
-                    <li> Dehradun</li>
-                    <li> Mussoorie</li>
-                    <li> Nainital</li>
-                    <li> Auli</li>
-                    <li> Rishikesh</li>
-                </ul>
-                </p>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Project Management</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
 
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Product Management</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SDLC</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Product Development Cycle</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Agile</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Scrum</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Sprint</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Waterfall</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">API</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">NoSQL</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">UI/UX</h5>
+                  <span class="icon-placeholder"></span>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
             </div>
-        </div>
-    </section>
 
-    <section class="faq">
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-        <div class="container2">
-            <style>
-                .container2 {
-                    position: relative;
-                    grid-template-columns: auto auto auto;
-                    gap: 5%;
-                    padding: 35px;
-                    margin-top: 50px;
-                    margin-left: 35px;
-                    margin-right: 34px;
-                    border-radius: 10px;
-                    font-size: 12px;
-                    color: black;
-                    background-color: white;
-                    box-shadow: 5px 5px 10px #3b3737;
-                }
-            </style>
+                    <img
+                      src="./assets/images/project-1.jpg"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <div> <br>
-                <h1 class="faqh1">FAQs - Frequently Asked Questions</h1>
-            </div>
+                  <h3 class="project-title">Finance</h3>
 
-            <p><br>
-            <h3> What kind of destinations can I choose for travelling?</h3> <br>
-            <p> You can choose any destination for travel as per your mood. For an action-packed holiday, you can choose
-                wildlife, trekking and other adventurous destinations. For a romantic holiday with your special someone,
-                you can choose from a range of couple-friendly destinations. You can also choose the kind of holiday you
-                want based on the destination you like—whether hills, mountains, beaches, heritage or pilgrimage sites.
-            </p><br>
-            <hr>
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
 
-            <br>
-            <h3> Can I opt for a budget-friendly holiday?</h3><br>
-            <p>
-                Yes, you can. All you have to do is set an approximate expenditure amount in your mind before starting
-                exploring the ideas here. You can search for a suitable destination for your travel in any range from
-                Rs. 10,000 to Rs. 50,000. It is advisable to make all the bookings in advance in order to avoid change
-                in prices.</p><br>
-            <hr>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-            <br>
-            <h3> Which time of the year is best suited for booking a holiday?</h3><br>
-            <p>x
-                Holidays can be booked throughout the year. You only need to select the month in which you are planning
-                to travel. Our curated list of ideas is designed in such a way that you will be able to see only those
-                destinations which are most suitable for that particular month of the year. If you select a combination
-                of filters defining your month, budget and purpose of travel, you will get the appropriate destination
-                name and other details.</p><br>
-            <hr>
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
 
-            <br>
-            <h3>What all will I get in a holiday idea?</h3>
-            <p>Once you choose a destination, it will give you complete details of all the unique things about that
-                place that must not be missed, including most visited local sites, best places to stay and all the
-                memorable experiences that you can indulge in. You will be given multiple options of hotels, resorts and
-                guest houses to choose from depending on your budget. </p> <br>
-            <hr>
-            </p>
-        </div>
-    </section>
+                  <h3 class="project-title">Orizon</h3>
 
-    <!-- Newsletter -->
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
 
-    <section class="newsletter">
-        <div class="newstext">
-            <h2>Newsletter</h2>
-            <p>Subscribe to get offers and latest<br>updates every week!</p>
-        </div>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-        <div class="send">
-            <form action="">
-                <input type="email" name="emailid" placeholder="E-mail" required>
-                <input type="submit" value="Subscribe">
+                    <img
+                      src="./assets/images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Fundo</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Brawlhalla</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">DSM.</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-6.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">MetaSpark</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-7.png"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Summary</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-8.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Task Manager</h3>
+
+                  <p class="project-category">Applications</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-9.png"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Arrival</h3>
+
+                  <p class="project-category">Web development</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a href="#">
+                  <blockquote class="twitter-tweet" data-media-max-width="560">
+                    <p lang="en" dir="ltr">
+                      Level up 🎉 I reached
+                      <a
+                        href="https://twitter.com/googlemaps?ref_src=twsrc%5Etfw"
+                        >@googlemaps</a
+                      >
+                      <a
+                        href="https://twitter.com/localguides?ref_src=twsrc%5Etfw"
+                        >@localguides</a
+                      >
+                      level 8 by helping others explore on Google Maps.<br />Please
+                      follow:
+                      <a href="https://t.co/D7nC887iDV"
+                        >https://t.co/D7nC887iDV</a
+                      >
+                      <a
+                        href="https://twitter.com/hashtag/localguides?src=hash&amp;ref_src=twsrc%5Etfw"
+                        >#localguides</a
+                      >
+                      <a
+                        href="https://twitter.com/hashtag/Google?src=hash&amp;ref_src=twsrc%5Etfw"
+                        >#Google</a
+                      >
+                      <a href="https://t.co/D7THxQyidw"
+                        >pic.twitter.com/D7THxQyidw</a
+                      >
+                    </p>
+                    &mdash; Anshuman (@AnshumanYTPM)
+                    <a
+                      href="https://twitter.com/AnshumanYTPM/status/1881069834596925884?ref_src=twsrc%5Etfw"
+                      >January 19, 2025</a
+                    >
+                  </blockquote>
+                  <script
+                    async
+                    src="https://platform.twitter.com/widgets.js"
+                    charset="utf-8"
+                  ></script>
+                  <div class="responsive-embed">
+                    <iframe
+                      src="https://www.linkedin.com/embed/feed/update/urn:li:share:7193356362808979456"
+                      height="599"
+                      width="100%"
+                      frameborder="0"
+                      allowfullscreen=""
+                      title="Embedded post"
+                    ></iframe>
+                  </div>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+                      <span class="dot"></span>
+                      <time datetime="2022-02-23">Feb 23, 2022</time>
+                    </div>
+                    <h3 class="h3 blog-item-title">
+                      Design conferences in 2022
+                    </h3>
+                    <p class="blog-text">
+                      Veritatis et quasi architecto beatae vitae dicta sunt,
+                      explicabo.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="blog-post-item">
+                <div class="responsive-embed">
+                  <iframe
+                    src="https://www.linkedin.com/embed/feed/update/urn:li:share:7179215874518609921"
+                    height="568"
+                    width="100%"
+                    frameborder="0"
+                    allowfullscreen=""
+                    title="Embedded post"
+                  ></iframe>
+                </div>
+              </li>
+
+              <!-- Other blog items -->
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                width="600"
+                height="400"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=lucknow&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              >
+              </iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
             </form>
-        </div>
-    </section>
+          </section>
+        </article>
+      </div>
+    </main>
 
-    <!-- Footer -->
+    <!--
+    - custom js link
+  -->
+    <script src="script.js"></script>
 
-    <section class="footer">
-        <div class="foot">
-            <div class="footer-content">
-
-                <div class="footlinks">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="./booking.html">Register</a></li>
-                        <li><a href="./info.html">About Us</a></li>
-                        <li><a href="./contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footlinks">
-                    <h4>Connect</h4>
-                    <div class="social">
-                        <a href="https://www.facebook.com/profile.php?id=100007787415175" target="_blank"><i
-                                class='bx bxl-facebook'></i></a>
-                        <a href="https://www.instagram.com/iamit010/" target="_blank"><i
-                                class='bx bxl-instagram'></i></a>
-                        <a href="https://twitter.com/sarcasmit_" target="_blank"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://www.linkedin.com/in/amit-kumar-singh-475b36212/" target="_blank"><i
-                                class='bx bxl-linkedin'></i></a>
-                        <a href="https://github.com/iamit010" target="_blank"><i class='bx bxl-github'></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="end">
-            <p>Copyright © 2023 Adventour All Rights Reserved.<br>Website developed by: Amit Kumar Singh</p>
-        </div>
-    </section>
- <SCRIPT type="text/javascript">
-        function JavaBlink() {
-           var blinks = document.getElementsByTagName('JavaBlink');
-           for (var i = blinks.length - 1; i >= 0; i--) {
-              var s = blinks[i];
-              s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
-           }
-           window.setTimeout(JavaBlink, 500);
-        }
-        if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
-        else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
-        else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
-        else window.onload = JavaBlink;
-      </SCRIPT>
-         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
- 
-</body>
-
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
